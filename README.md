@@ -13,7 +13,11 @@ How to use Loopback and Angular on mobile device with linux based system (Ubuntu
 
 ### Install required tools
 
-- OpenJDK : ```$ sudo apt-get install openjdk-7-jdk```
+- OpenJDK : 
+```bash
+$ sudo apt-get install openjdk-7-jdk
+$ sudo apt-get install openjdk-7-jre
+```
 - Icedtea : http://apt.ubuntu.com/p/icedtea-7-plugin
 - Android SDK is available here : http://developer.android.com/sdk/index.html#Other (follow instructions)
   
