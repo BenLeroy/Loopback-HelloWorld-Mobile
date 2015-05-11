@@ -9,7 +9,7 @@ How to use Loopback and Angular on mobile device with linux based system (Ubuntu
 - ANT
 - Node.js
 - Cordova
-- Ubuntu SDK (optional?)
+- An emulator (Android AVD, Genymotion...)
 
 ### Install required tools
 
@@ -41,15 +41,8 @@ It should open Android SDK, from there select and install : Android SDK Tools, A
 2 $ sudo apt-get update
 3 $ sudo apt-get install cordova-cli
 4 $ sudo apt-get install click-dev
+5 $ sudo apt-get install lib32stdc++6 lib32z1
 ```
-- Ubuntu SDK : 
-```bash
-$ sudo apt-get update && sudo apt-get install ubuntu-sdk
-$ sudo apt-get update && sudo apt-get dist-upgrade
-$ sudo click chroot -a armhf -f ubuntu-sdk-14.10 create
-$ sudo click chroot -a armhf -f ubuntu-sdk-14.10 maint apt-get install cmake libicu-dev:armhf pkg-config qtbase5-dev:armhf qtchooser qtdeclarative5-dev:armhf qtfeedback5-dev:armhf qtlocation5-dev:armhf qtmultimedia5-dev:armhf qtpim5-dev:armhf libqt5sensors5-dev:armhf qtsystems5-dev:armhf
-```
-
 
 ## Create your Cordova app
 
@@ -61,6 +54,10 @@ This will create a new folder called [dir].
 
 Go to your app folder with ```$ cd [dir]```
 
-And now run ```$ cordova platform add ubuntu```
-
+And now run :
+```bash
+1 $ cordova platform add android
+2 $ cordova build android
+```
+To use the app, you have to do different things, depending on the emulator.
 
