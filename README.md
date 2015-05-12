@@ -1,4 +1,4 @@
-# Loopback-HelloWorld-Mobile
+# loopback-users-mobile
 
 How to use Loopback and Angular on mobile device with linux based system (Ubuntu 14.04 LTS)
 
