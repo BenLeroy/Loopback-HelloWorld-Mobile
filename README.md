@@ -60,4 +60,5 @@ And now run :
 2 $ cordova build android
 ```
 To use the app, you have to do different things, depending on the emulator.
+If you are using Android AVD, a simple `$ cordova run` should work; else is you are using Genymotion like me, after executing `$ cordova build`, you'll have to navigate to [projectDir]/platforms/android/build/outputs/apk/ ; then drag & drop the android-debug.apk file to Genymotion virtual device.
 
